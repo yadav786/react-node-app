@@ -1,0 +1,9 @@
+{
+    "engines": {
+        "node": "21.7.3"
+    },
+    "scripts" : {
+        "start": "node server/index.js",
+        "build": "cd client && npm install && npm run build"
+    }
+}
