@@ -7,7 +7,7 @@ function App() {
 
 const [data, setData] = useState(null);
 useEffect(() => {
-  fetch('/api').then(res => res.json()).then(resData => setData(resData.message));
+  fetch('https://react-node-app-lfop.onrender.com/api').then(res => res.json()).then(resData => setData(resData.message));
 }, []);
   return (
     <div className="App">
