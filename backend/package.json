@@ -3,7 +3,7 @@
         "node": "21.7.3"
     },
     "scripts" : {
-        "start": "node server/index.js",
+        "start": "node backend/index.js",
         "build": "cd ../client && npm install && npm run build"
     }
 }
