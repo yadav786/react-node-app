@@ -5,7 +5,7 @@ import { accountsModel } from '../models/accountModel.js';
 accountController.get('/', async(req, res) => {
     try {
         const account = await accountsModel.findOne();
-        return res.status(200).json(account.title);
+        return res.json(account.title);
     } catch (error) {
         console.error(error);
     }
