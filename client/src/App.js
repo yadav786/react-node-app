@@ -5,8 +5,9 @@ import './App.css';
 function App() {
 
 const [data, setData] = useState(null);
+console.log(process.env);
 useEffect(() => {
-  fetch('https://react-node-app-lfop.onrender.com/api').then(res => res.json()).then(resData => setData(resData.message));
+  fetch(`${process.env.REACT_APP_API_ENDPOINT}/api`).then(res => res.json()).then(resData => setData(resData.message));
 }, []);
   return (
     <div className="App">
